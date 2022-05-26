@@ -31,6 +31,7 @@ export default function App() {
           Button #2
         </Button>
         <Button variant="success">Button #3</Button>
+        <button class="button">normal button</button>
       </div>
     </div>
   );
