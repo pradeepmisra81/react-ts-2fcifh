@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useState } from 'react';
 import './style.css';
 import Select from 'react-select';
+import Button from 'react-bootstrap/Button';
 
 export default function App() {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -23,6 +24,13 @@ export default function App() {
         onChange={setSelectedOption}
         options={options}
       />
+      <div className="mx-0">
+        <Button variant="primary">Button #1</Button>
+        <Button variant="secondary" className="mx-2">
+          Button #2
+        </Button>
+        <Button variant="success">Button #3</Button>
+      </div>
     </div>
   );
 }
